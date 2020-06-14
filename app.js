@@ -414,19 +414,98 @@ if (a>b){
     document.write("{a} is reater than {b}")
 }
 else if(a===b){
-    document.write("{a} is reater than {b}")
+    document.write("{a} is equal to {b}")
 
 
 }
 
+// 3. Write a program that takes input a number from user & state whether the number is positive, negative or zero.
+
+var a=Number(prompt("Enter Number:"))
+if(a.startswith('+')){
+    document.write("Poditive")
+}
+else if(a.startswith('-')){
+    document.write("Negative")
+}
+else{
+    document.write("zero")
+}
+
+// 4. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise
+var a=prompt("Enter String:")
+var v=['a','e','i','o','u']
+if (a in v){
+    document.write("true")
+}
+else{
+    document.write("false")
+}
+
+// 5. Write a program that
+// a. Store correct password in a JS variable.
+var a=prompt("Enter Password:")
 
 
+// b. Asks user to enter his/her password
+var b=prompt("Enter Password:")
+
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are same, show message “Correct! The password you entered matches the original password”. Show “Incorrect password” otherwise.
+if(a===null){
+    document.write("Please enter your password”")
+}
+else if(a===b){
+    document.write("Correct")
+}
+else{
+    document.write("Incorrect")
+}
+
+// 6. This if/else statement does not work. Try to fix it:
+ var greeting;
+  var hour = 13;
+   if (hour < 18) { greeting = "Good day"}
+    else 
+    {greeting = "Good evening"; }
 
 
+// 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements
 
+var t=Number(("Enter time in 24hours clock format"))
+if((t>=0000)&&(t<1200)){
+    document.write("Good Morning")
+}
+else if(t>=1200){
+  document.write("Good Afternoon")
+}
+else if(t>=1700&&t<2100){
+    document.write("Good Evening")
+}
+else  if(t>=2100&&t<=2359){
+    document.write("Good night")
+}
 
-
-
+// *****************************************************
+// Assignment 13-15
+// 1. Declare an empty array using JS literal notation to store student names in future.
+var a=[]
+// 2. Declare an empty array using JS object notation to store student names in future.
+var a=[]
+// 3. Declare and initialize a strings array.
+var a=["a","b","c"]
+// 4. Declare and initialize a numbers array.
+var a=[1,2,34,5]
+// 5. Declare and initialize a boolean array.
+var t=[true,false]
+// 6. Declare and initialize a mixed array.
+var b=[1,2,"a","sd sd"]
+// 7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser like:
+var q=["SSC","HSC","BCS","BS","Bcom","Ms","M.Phil","PhD"]
+for(a in q){
+    document.writeln(a)
+}
 
 
 
