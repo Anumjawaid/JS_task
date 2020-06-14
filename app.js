@@ -495,7 +495,7 @@ var a=[]
 var a=[]
 // 3. Declare and initialize a strings array.
 var a=["a","b","c"]
-// 4. Declare and initialize a numbers array.
+// 4. Declare and initialize a numbers array.https://github.com/Anumjawaid/JS_task/upload
 var a=[1,2,34,5]
 // 5. Declare and initialize a boolean array.
 var t=[true,false]
@@ -506,7 +506,12 @@ var q=["SSC","HSC","BCS","BS","Bcom","Ms","M.Phil","PhD"]
 for(a in q){
     document.writeln(a)
 }
-
+// 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students like:
+var st=["Michael","John","Tony"]
+var p=["64%","46%","98%"]
+for(a,i in Enumerator(st,p)){
+    document.write("score of",a,"is",i)
+}
 
 
 
